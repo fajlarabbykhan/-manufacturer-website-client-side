@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const TopSell = ({ tool }) => {
+const AllToolAndPart = ({ tool }) => {
     return (
         <div>
             <div class="card w-96 bg-base-100 shadow-xl">
@@ -9,7 +9,6 @@ const TopSell = ({ tool }) => {
                 <div class="card-body">
                     <h2 class="card-title">
                         {tool.name}
-                        <div class="badge badge-secondary">NEW</div>
                     </h2>
 
                     <p><span className='text-rose-500	'>Description:</span> {tool.description} ...</p>
@@ -25,4 +24,4 @@ const TopSell = ({ tool }) => {
     );
 };
 
-export default TopSell;
+export default AllToolAndPart;

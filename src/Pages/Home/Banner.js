@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import slider from "../../Assets/Images/slider-1.jpg"
 const Banner = () => {
     return (
@@ -12,7 +13,7 @@ const Banner = () => {
                         <p class="mb-5 text-white">At the Lowest Price. The chassis of an automobile incorporates all the major assemblies consisting of an engine, components of transmission system such as clutch, gearbox, propeller shaft, axles, a control system such as brakes and steering, and suspension system of the vehicle.
 
                             In other words, it is the vehicle without its body.</p>
-                        <button class="btn btn-primary text-white">Get Started</button>
+                        <button class="btn btn-primary text-white"><Link to='/toolsorparts'>Get Started</Link></button>
                     </div>
                 </div>
             </div>

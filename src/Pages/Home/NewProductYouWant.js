@@ -20,12 +20,12 @@ const NewProductYouWant = () => {
                 />
                 <input
                     type='text'
-                    placeholder='New tools/parts'
+                    placeholder='New tools/parts name'
                     className='input w-full max-w-md'
                 />
                 <textarea
                     className='textarea w-full max-w-md'
-                    placeholder='Your message'
+                    placeholder='Your message, tools or parts details...'
                     rows={6}
                 ></textarea>
                 <PrimaryButton>Submit</PrimaryButton>

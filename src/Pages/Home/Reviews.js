@@ -5,23 +5,23 @@ const Reviews = () => {
     const reviews = [
         {
             _id: 1,
-            name: 'Winson Herry',
+            name: 'Layla Akter',
             review: 'Great quality and it�s welded together just what I was hoping for . fast shipping and great seller!',
-            location: 'california',
+            location: 'Dhaka',
             img: 'https://i.ibb.co/8YGKjtM/people2.png'
         },
         {
             _id: 2,
-            name: 'Winson Herry',
+            name: 'Koddos Kabila',
             review: 'Quality standards. Going for a long time. Thinking that the product will be smaller.',
-            location: 'california',
+            location: 'Chomilla',
             img: 'https://i.ibb.co/nbD8PJr/people1.png'
         },
         {
             _id: 3,
-            name: 'Winson Herry',
+            name: 'Pasha Aaaaaa',
             review: 'Product conform to web designation, very simple and nice hardware.',
-            location: 'california',
+            location: 'Rajshahi',
             img: ' https://i.ibb.co/jkrftmB/people3.png'
         },
     ];

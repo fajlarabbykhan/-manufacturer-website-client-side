@@ -4,6 +4,7 @@ import Logo from '../../Assets/Images/logo.png'
 const Navber = () => {
     const menuItems = <>
         <li><Link to='/'>Home</Link></li>
+        <li><Link to='/toolsorparts'>Tools/Parts</Link></li>
         <li><Link to='/purchase'>Purchase</Link></li>
         <li><Link to='/blogs'>Blogs</Link></li>
         <li><Link to='/contact'>Contact</Link></li>

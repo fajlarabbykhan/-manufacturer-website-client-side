@@ -6,6 +6,7 @@ import Purchase from './Pages/Purchase/Purchase';
 import Blogs from './Pages/Blogs/Blogs'
 import Login from './Pages/Login/Login';
 import NotFound from './Pages/Shared/NotFound';
+import AllToolsAndParts from './Pages/AllToolsAndParts/AllToolsAndParts';
 function App() {
   return (
     <div>
@@ -13,6 +14,7 @@ function App() {
       <Navber></Navber>
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/toolsorparts' element={<AllToolsAndParts />} />
         <Route path='/purchase' element={<Purchase />} />
         <Route path='/blogs' element={<Blogs />} />
         <Route path='/login' element={<Login />} />
