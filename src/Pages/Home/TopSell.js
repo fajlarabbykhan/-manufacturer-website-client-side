@@ -17,7 +17,7 @@ const TopSell = ({ tool }) => {
                     <p><span className='text-rose-500'>Available Quantity:</span> {tool.availableQuantity}</p>
                     <p><span className='text-rose-500'>Price:</span> {tool.price}</p>
                     <div class="card-actions justify-start">
-                        <button class="btn btn-primary"><Link to='/purchase'>Buy Now</Link></button>
+                        <button class="btn btn-primary"><Link to='/purchase'>Details</Link></button>
                     </div>
                 </div>
             </div>

@@ -14,13 +14,15 @@ const Navber = () => {
 
 
     const menuItems = <>
-        <li className='text-xl'><Link to='/'>Home</Link></li>
-        <li className='text-xl '><Link to='/toolsorparts'>Tools/Parts</Link></li>
-        <li className='text-xl '><Link to='/purchase'>Purchase</Link></li>
-        <li className='text-xl '><Link to='/blogs'>Blogs</Link></li>
-        <li className='text-xl '><Link to='/contact'>Contact</Link></li>
-
-        <li>{user ? <button className="text-xl bg-lime-200" onClick={logout} >SIGN OUT</button> : <Link className='text-xl' to="/login">Login</Link>}</li>
+        <li className=''><Link to='/'>Home</Link></li>
+        <li className=' '><Link to='/toolsorparts'>Tools/Parts</Link></li>
+        <li className=' '><Link to='/purchase'>Purchase</Link></li>
+        <li className=' '><Link to='/blogs'>Blogs</Link></li>
+        <li className=' '><Link to='/contact'>Contact</Link></li>
+        {
+            user && <li className=''><Link to='/dashboard'>Dashboard</Link></li>
+        }
+        <li>{user ? <button className="text-lime-600" onClick={logout} >SIGN OUT</button> : <Link className='' to="/login">Login</Link>}</li>
 
 
 
@@ -30,6 +32,7 @@ const Navber = () => {
             <div className="navbar-start">
 
                 <a className="btn btn-ghost normal-case text-xl"><img src={Logo} alt="" /></a>
+
             </div>
             <div className=" ">
                 <div className="dropdown ml-6">
@@ -41,11 +44,19 @@ const Navber = () => {
                     </ul>
                 </div>
             </div>
+
             <div className="navbar-end hidden lg:flex">
+
                 <ul className="menu menu-horizontal p-0">
                     {menuItems}
                 </ul>
             </div>
+            {
+                user && <div className="navbar-center">
+                    <label for="my-drawer-2" className="btn btn-primary drawer-button lg:hidden ">Dashboard</label>
+                </div>
+            }
+
         </div>
     );
 };

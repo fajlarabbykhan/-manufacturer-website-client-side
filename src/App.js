@@ -9,6 +9,12 @@ import NotFound from './Pages/Shared/NotFound';
 import AllToolsAndParts from './Pages/AllToolsAndParts/AllToolsAndParts';
 import Register from './Pages/Login/Register';
 import RequireAuth from './Pages/Login/RequireAuth';
+import Dashboard from './Pages/Dashboard/Dashboard';
+import MyOrders from '.././src/Pages/Dashboard/MyOrders'
+import MyProfile from '.././src/Pages/Dashboard/MyProfile'
+import MyReviews from '.././src/Pages/Dashboard/MyReviews'
+
+
 function App() {
   return (
     <div>
@@ -20,6 +26,15 @@ function App() {
         <Route path='/purchase' element={<RequireAuth>
           <Purchase />
         </RequireAuth>} />
+        <Route path='/dashboard' element={<RequireAuth>
+          <Dashboard />
+        </RequireAuth>} >
+
+          <Route index element={<MyOrders></MyOrders>}></Route>
+          <Route path='myprofile' element={<MyProfile></MyProfile>}></Route>
+          <Route path='myreviews' element={<MyReviews></MyReviews>}></Route>
+
+        </Route>
         <Route path='/blogs' element={<Blogs />} />
         <Route path='/login' element={<Login />} />
         <Route path='/register' element={<Register />} />
