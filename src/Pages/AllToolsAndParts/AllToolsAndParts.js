@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import AllToolAndPart from './AllToolAndPart';
-
+import Purchase from '../Purchase/Purchase'
 const AllToolsAndParts = () => {
     const [tools, setTools] = useState([])
     useEffect(() => {
@@ -18,6 +18,12 @@ const AllToolsAndParts = () => {
                             tool={tool}
                         ></AllToolAndPart>)
                     }
+                    {/* {
+                        tools.map(tool => <Purchase
+                            key={tool._id}
+                            tool={tool}
+                        ></Purchase>)
+                    } */}
                 </div>
             </div>
         </div>
