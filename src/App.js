@@ -13,6 +13,7 @@ import Dashboard from './Pages/Dashboard/Dashboard';
 import MyOrders from '.././src/Pages/Dashboard/MyOrders'
 import MyProfile from '.././src/Pages/Dashboard/MyProfile'
 import MyReviews from '.././src/Pages/Dashboard/MyReviews'
+import AllUsers from './Pages/Dashboard/AllUsers';
 
 
 function App() {
@@ -30,7 +31,8 @@ function App() {
           <Dashboard />
         </RequireAuth>} >
 
-          <Route index element={<MyOrders></MyOrders>}></Route>
+          <Route index element={<AllUsers></AllUsers>}></Route>
+          <Route path='myorders' element={<MyOrders></MyOrders>}></Route>
           <Route path='myprofile' element={<MyProfile></MyProfile>}></Route>
           <Route path='myreviews' element={<MyReviews></MyReviews>}></Route>
 
